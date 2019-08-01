@@ -3,6 +3,7 @@
 # dependencies
 /WebCrawler/node_modules
 /toJson/node_modules
+/toJson/data/jsondata.json
 /node_modules
 /.pnp
 .pnp.js

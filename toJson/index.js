@@ -8,7 +8,7 @@ myfun = (csvFilePath = path.join(__dirname, 'data', 'customer-data.xls')) => {
     csv()
     .fromFile(csvFilePath)
     .then((jsonObj) => {
-        fs.writeFileSync(path.join(__dirname, 'data', 'jsondata.json'), JSON.stringify(jsonObj))
+        fs.writeFileSync(path.join(__dirname, 'data', 'jsondata.json'), JSON.stringify(jsonObj, null, 2))
         console.log('finished')
         console.log(`Your file has been saved to ${path.join(__dirname, 'data', 'jsondata.json')}`)
     })
